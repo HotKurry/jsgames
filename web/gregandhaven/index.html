@@ -1,0 +1,573 @@
+
+<!DOCTYPE html>
+<!--
+
+Copyright 2016 Google Inc. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+<html>
+    <head>
+        <title>Greg and Haven are Engaged!</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/style.css">
+<style>
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color:#424242;
+}
+* {
+  box-sizing: border-box;
+}
+
+h1, h2,h5 {
+  text-shadow: 0 0 2px white, 1px 2px 3px black;
+
+}
+p{
+	font-family: 'Roboto', sans-serif;
+}
+
+.scene {
+  height: 150vh;
+
+}
+
+.parallax {
+  background-size: cover;
+  box-sizing: border-box;
+  width: 100%;
+  height: 130vh;
+  /* Since the parallax elements still consume space, we set the margin to undo
+     the height of this parallax element making it essentially consume 0 space.
+  */
+  margin-bottom: -130vh;
+}
+
+.header {
+  height: 90vh;
+
+
+}
+.parallax.header {
+  margin-bottom: -90vh;
+}
+
+p {
+  color: white;
+  z-index: 1;
+  position: relative;
+}
+
+.viewport {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+.woods:not(.header),
+.sunset:not(.header) {
+
+}
+.sunset:not(.header) {
+  align-items: flex-end;
+}
+.solid {
+  z-index: 1;
+  position: relative;
+  height: 70vh;
+  display: flex;
+
+}
+
+.solid.star {
+  background-color: #424242;
+
+}
+.solid.woods {
+  background-color: #424242;
+
+}
+a, a:link, a:active, a:hover, a:visited {
+  color: hsl(240, 100%, 90%);
+  display: flex;
+  align-items: flex-end;
+}
+.mills{
+	background-image: url("/assets/skygtr.png");
+	background-repeat:no-repeat;
+	z-index:-1;
+	height:240px;
+	margin-top:-240px;
+	width:100%;
+}
+
+</style>
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/tether.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+		<script src="/js/timer.min.js"></script>
+		<script src="/js/parallax.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    initializeParallax(document.querySelector('.viewport'));
+  });
+</script>
+</head>
+<body>
+    <div class="viewport">
+    <div>
+      <!-- Specifying a parallax rate of 0.3 will slide the image at that proportion of the scroll speed. -->
+      <div class="parallax header" style="background-image: url('/assets/skybulb43.jpg');" parallax=".6"></div>
+      <div class="scene header">
+	<div class="caption kickdown"  id="top">
+	<h1 class="text-center names">Gregory & Haven</h1>
+	<h2 class="text-center date">October 11, 2019</h2>
+
+	</div>
+      </div>
+	  <div class="mills"></div>
+      <div class="scene solid star">
+		<div class="brap">
+	<div class="container lilpad">
+<div class="caption cap3">
+<div class="row">
+	<div class="col">
+	</div>
+	<div class="col-8">
+<div id="timer" class="row">
+    <div id="days" class="col-sm"></div>
+     <div id="hours"  class="col-sm"></div>
+    <div id="minutes" class="col-sm"></div>
+    <div id="seconds" class="col-sm"></div>
+</div>
+</div>
+	<div class="col"></div>
+	</div>
+	</div>
+	</div>
+</div>
+
+      </div>
+      <!-- When a rate isn't specified, it will be calculated such that the image always fills the space between the
+           element before it and the next element with the "parallax-cover" attribute. -->
+      <div class="parallax" style="background-image: url('/assets/canadaflower3.jpg');" parallax></div>
+      <div class="scene woods">
+	  <div class="caption kickdown2">
+        <h1 class="text-center" id="ourstory">Here's the scoop:</h1>
+        </div>
+      </div>
+	  <div class="mills"></div>
+      <div class="scene solid woods" parallax-cover>
+<div class="brap">
+<div class="container">
+
+<div class="row">
+	<div class="col-lg">
+	</div>
+
+    <div class="col-lg-8 about">
+		<p><span class="text-or">Haven is a high-energy, not-so-graceful, iced coffee-fueled journalist</span> whose morbid curiosity and skepticism drive pretty much all aspects of her life. She also has impossibly pointy elbows, two ferrets, and a Mexican street dog.</p>
+		<p><span class="text-or">Greg is a laid-back, spectacle-wearing, space-loving software engineer</span> who watches live rocket launches and builds bots for fun. </p>
+		<p>Their adventures have taken them to the beaches of Spain, North Carolina and Cape Cod; mountains in Barcelona, Montreal and the Berkshires; and the souks of Marrakech.</p>
+		<p>On an average day, however, they can be found watching Friends reruns on their couch with Cal or scouting out restaurants with the best <span class="text-or">mac & cheese. </span></p>
+		<p>Greg proposed to Haven on Sunday, December 10 at <span class="text-or">Mass MoCA.</span></p>
+		<p>They're getting <span class="text-or">married</span> on October 11, 2019.</p>
+	</div>
+     <div class="col-lg">
+
+
+    </div>
+</div>
+</div>
+      </div>
+      </div>
+      <!-- When a rate isn't specified and there is no subsequent element with the "parallax-cover" attribute the rate
+           will be calculated such that the image slides until the end of the scrollable content. -->
+      <div class="parallax" style="background-image: url('/assets/streetsofafrica5.jpg');" parallax></div>
+      <div class="scene woods">
+	  <div class="caption  kickdown2">
+        <h1 class="text-center" id="weddingparty">Wedding Party:</h1>
+		</div>
+      </div>
+    	  <div class="mills"></div>
+      <div class="scene solid woods"  parallax-cover>
+<div class="brap">
+<div class="container">
+
+
+<div class="row ">
+	<div class="col-6">
+		<div class="row">
+			<div class="col-sm-6">
+				<img src="/assets/mattp.jpg" class="img-fluid circleimg">
+				</div>
+			<div class="col-sm-6">
+				<img src="/assets/suz.jpg" class="img-fluid circleimg">
+			</div>
+		</div>
+	</div>
+	<div class="col-6">
+		<div class="row">
+			<div class="col-sm-6">
+				<img src="/assets/maidofhonor.jpg" class="img-fluid circleimg">
+			</div>
+			<div class="col-sm-6">
+				<img src="/assets/ethan.jpg" class="img-fluid circleimg">
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Row 2 -->
+	<div class="row ">
+	<div class="col-6">
+		<div class="row">
+			<div class="col-sm-6">
+				<img src="/assets/amy.jpg" class="img-fluid circleimg">
+				</div>
+			<div class="col-sm-6">
+				<img src="/assets/john.jpg" class="img-fluid circleimg">
+			</div>
+		</div>
+	</div>
+	<div class="col-6">
+		<div class="row">
+			<div class="col-sm-6">
+				<img src="/assets/maddie.jpg" class="img-fluid circleimg">
+			</div>
+			<div class="col-sm-6">
+				<img src="/assets/sister.jpg" class="img-fluid circleimg">
+			</div>
+		</div>
+	</div>
+</div>
+		<!-- Row 3 -->
+		<div class="row ">
+			<div class="col-6">
+		<div class="row">
+		<div class="col-sm-6">
+	<img src="/assets/fogo.jpg" class="img-fluid circleimg">
+		</div>
+	<div class="col-sm-6">
+		<img src="/assets/brian3.png" class="img-fluid circleimg">
+		</div>
+		</div>
+	</div>
+
+		<div class="col-6">
+		<div class="row">
+		<div class="col-sm-6">
+	<img src="/assets/wendy.png" class="img-fluid circleimg">
+	</div>
+			<div class="col-sm-6">
+		<img src="/assets/bragon.jpg" class="img-fluid circleimg">
+	</div>
+	</div>
+	</div>
+	</div>
+	<!-- Row 4 -->
+
+	</div>
+	</div>
+      </div>
+
+
+
+
+
+	<!--INFO START -->
+ 	      <div class="parallax" style="background-image: url('/assets/spainbeach5.jpg');" parallax></div>
+      <div class="scene woods">
+	  <div class="caption kickdown2">
+        <h1 class="text-center" id="info">Information:</h1>
+        </div>
+      </div>
+	  <div class="mills"></div>
+      <div class="scene solid woods" parallax-cover>
+
+
+ <div class="brap">
+<div class="container">
+<div class="row">
+	<div class="col-md">
+	</div>
+<div class="col-md-6">
+<h2 class="text-center">The Wedding</h2>
+<br>
+<p><span class="text-or">October 11, 2019</span><br>
+Mill 1 at Open Square<br>
+1 Open Square Way<br>
+Holyoke, MA 01040</p>
+<br>
+
+
+
+<blockquote class="blockquote">
+Fun fact: This former paper mill was constructed in the mid-1800s and generates its own electricity using two Victorian-era hydro turbines.
+</blockquote>
+
+
+</div>
+	<div class="col-md-4">
+	<h2 class="text-center">The Registry</h2>
+	<a href="https://www.amazon.com/wedding/share/gregandhaven">
+	<img src="http://media.corporate-ir.net/media_files/IROL/17/176060/img/logos/amazon_logo_RGB.jpg" class="img-fluid curved">
+	</a>
+	<a href="https://www.crateandbarrel.com/gift-registry/haven-orecchio-egresitz-and-gregory-vigeant/r5826301">
+	<img src="/assets/candbarrel.jpg" class="img-fluid curved">
+	</a>
+	</div>
+		<div class="col-md">
+	</div>
+
+	</div>
+      </div>
+</div>
+
+
+	  </div>
+	<!--   INFO END -->
+       <div class="parallax ourface" style="background-image: url('/assets/london2.jpg');" parallax></div>
+      <div class="scene woods">
+	  <div class="caption kickdown2">
+        <h1 class="text-center" id="tostay">Where to stay:</h1>
+        </div>
+      </div>
+	  <div class="mills"></div>
+      <div class="scene solid woods" parallax-cover>
+	<div class="brap">
+	<div class="container">
+
+	<div class="row">
+	<div class="col-sm">
+	</div>
+
+
+<div class="col-sm-5">
+<br>
+
+
+<h4>Holyoke (8-12 minutes)</h4>
+
+<p><a href="http://homewoodsuites3.hilton.com/en/hotels/massachusetts/homewood-suites-by-hilton-holyoke-springfield-north-HOLHWHW/index.html">Homewood Suites by Hilton</a>
+<span class="text-or">A limited number of rooms have been reserved here at rate of $179 for Oct 10th and 11th.</span><br>
+375 Whitney Avenue,<br>
+Holyoke, MA<br>
+(413) 532-3100</p>
+
+
+<p><a href="http://www.marriott.com/hotels/travel/bdlho-fairfield-inn-and-suites-springfield-holyoke/">Fairfield Inn & Suites</a>
+229 Whiting Farms Road,<br>
+Holyoke, MA<br>
+(413) 532-3100</p>
+
+<h4>Northampton (17-20 minutes)</h4>
+
+<p><a href="http://www.hotelnorthampton.com/">Hotel Northampton</a>
+36 King Street <br>
+Northampton, MA<br>
+(413) 584-3100</p>
+
+<br>
+<p>AirBNB and HotelTonight are also great options.</p>
+	</div>
+     <div class="col-sm">
+    </div>
+</div>
+</div>
+      </div>
+	  </div>
+
+
+
+<!--TOSTAY END-->
+ 	      <div class="parallax" style="background-image: url('/assets/happycamel.jpg');" parallax></div>
+      <div class="scene woods">
+	  <div class="caption cap2">
+        <h1 class="text-center kickdown2" id="todo">Your weekend away:</h1>
+        </div>
+      </div>
+	  <div class="mills"></div>
+      <div class="scene solid woods" parallax-cover>
+	<div class="brap">
+	<div class="container">
+
+	<div class="row">
+	<div class="col-lg">
+	</div>
+
+
+<div class="col-6-lg">
+
+<br>
+
+
+<p class="font-weight-bold">If you are sticking around after the wedding, here are some attractions nearby: </p>
+
+
+<p><a href="https://www.emilydickinsonmuseum.org/">Emily Dickinson Museum</a>
+280 Main St<br>
+Amherst, MA </p>
+<p>The Emily Dickinson Museum is a historic house museum consisting of two houses: the Dickinson Homestead  and the Evergreens.</p>
+
+
+<p><a href="www.lookpark.org/">Frank Newhall Look Memorial Park</a>
+300 North Main Street<br>
+Florence, MA </p>
+<p>Look Park consists of over 150 acres and is a perfect place to go for a walk and enjoy some New England fall foliage</p>
+
+<p><a href="https://www.mass.gov/locations/mount-tom-state-reservation">Mount Tom</a>
+125 Reservation Road<br>
+Holyoke, MA</p>
+<p>Those up for a hike can check out views of the entire Pioneer Valley from the top of Mt. Tom. There are plenty of trails to choose from.</p>
+
+
+<p><a href="https://www.northamptonma.gov/">Downtown Northampton</a>
+For great dining, shopping, and nightlife, checkout Main Street in downtown Northampton. There is street parking.</p>
+</div>
+     <div class="col-lg">
+    </div>
+</div>
+</div>
+      </div>
+	  </div>
+
+
+
+
+	  <!--toDO END-->
+
+
+
+
+
+
+
+
+
+	<div class="parallax  ourface" style="background-image: url('/assets/greens.jpg');" parallax></div>
+	<div class="scene sunset">
+				<h1 class="text-center kickdown2" id="weddingparty">See you soon!</h1>
+      </div>
+
+	</div>
+  </div>
+
+
+  		<!-- Navbar is here -->
+<nav id="navbar-top" class="navbar navbar-toggleable-sm navbar-inverse bg-inverse bg-faded fixed-top">
+	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<a class="navbar-brand" href="#top">#VigeantVows</a>
+	<div class="collapse navbar-collapse" id="navbarNav">
+		<ul class="navbar-nav ml-sm-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="#ourstory">our story</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#weddingparty">wedding party</a>
+			</li>
+	        <li class="nav-item">
+				<a class="nav-link" href="#info">information</a>
+			</li>
+				        <li class="nav-item">
+				<a class="nav-link" href="#tostay">to stay</a>
+			</li>
+				        <li class="nav-item">
+				<a class="nav-link" href="#todo">to do</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href='#'  data-toggle="modal" data-target="#exampleModalCenter">RSVP</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+	<!-- Navbar End -->
+
+	<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+	<form name="keeper" action="javascript:location.href =
+window.document.keeper.page.value + '.html'" >
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">RSVP</h5>
+        <button type="button" class="close" style="color: white;"  data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	    <div class="form-group">
+    <label for="exampleInputPassword1">Password:</label>
+    <input type="text" name="page" class="form-control" id="exampleInputPassword1" placeholder="Password">
+	</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		<button type="submit" value="Go" class="btn btn-primary">Submit</button>
+      </div>
+	  </form>
+    </div>
+
+  </div>
+</div>
+
+<!-- start GateKeeper code -->
+<!-- http://www.HTMLisEasy.com/keeper/
+<form name="keeper" action="javascript:location.href =
+window.document.keeper.page.value + '.html'" style="margin:0;">
+<div style="display:inline;">
+<input type="text" name="page">
+<input type="submit" value="Go">
+<noscript><div style="display:inline;color:#ff0000;
+background-color:#ffff66; font:normal 11px tahoma,sans-serif;">
+<br>Javascript is required to access this<br>area. Yours seems
+to be disabled.</div></noscript></div></form>
+<!-- end GateKeeper code -->
+-->
+</body>
+</html>
