@@ -1,0 +1,180 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #424242; }
+
+* {
+  box-sizing: border-box; }
+
+h1, h2, h5 {
+  text-shadow: 0 0 2px white, 1px 2px 3px black; }
+
+p {
+  font-family: 'Roboto', sans-serif; }
+
+#inc {
+  letter-spacing: .1em; }
+
+.parallax {
+  background-size: cover;
+  box-sizing: border-box;
+  width: 100%;
+  height: 130vh;
+  /* Since the parallax elements still consume space, we set the margin to undo
+     the height of this parallax element making it essentially consume 0 space.
+  */
+  margin-bottom: -130vh;
+  background-position: 35% 0; }
+
+.parallax.header {
+  margin-bottom: -90vh; }
+
+p {
+  color: white;
+  font-family: 'Roboto', sans-serif; }
+
+.viewport {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  -webkit-overflow-scrolling: touch; }
+
+.solid {
+  padding-top: .5rem;
+  z-index: 1;
+  position: relative;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+
+.solid.star {
+  background-color: #424242; }
+
+.solid.woods {
+  background-color: #424242; }
+
+a, a:link, a:active, a:hover, a:visited {
+  color: #ccccff;
+  display: flex;
+  align-items: flex-end; }
+
+/*outside googleworld*/
+#navbar-top {
+  background-color: rgba(41, 43, 44, 0.2) !important; }
+
+.navbar-brand {
+  text-shadow: 0 0 2px white, 1px 2px 3px black; }
+
+.caption {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  z-index: 20; }
+
+.mills {
+  background-image: url("/assets/skygtr.png");
+  background-repeat: no-repeat;
+  height: 240px;
+  margin-top: -240px;
+  width: 100%;
+  position: relative;
+  bottom: -2px;
+  background-position: 5% 0; }
+
+.circleimg {
+  border-radius: 50%; }
+
+.text-or {
+  color: #FF5722; }
+
+.about {
+  font-size: 2.8vh; }
+
+.fam {
+  font-size: 3.2vw; }
+
+.navbar-inverse .navbar-nav .nav-link {
+  color: white; }
+
+.navbar-inverse .navbar-nav .nav-link:focus, .navbar-inverse .navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 0.75); }
+
+.navbar-inverse .navbar-nav .nav-link:focus, .navbar-inverse .navbar-nav .nav-link .active:hover {
+  color: rgba(255, 255, 255, 0.75); }
+
+.container, .brap {
+  background-color: #424242; }
+
+.brap {
+  width: 100%;
+  padding: 0 5px; }
+
+.lilpad {
+  padding: 2rem; }
+
+.names {
+  font-size: 9vw; }
+
+.date {
+  font-size: 5vw; }
+
+.blockquote {
+  color: #FF5722; }
+
+.curved {
+  border-radius: 10px;
+  margin: 1rem 0; }
+
+.whit {
+  background: white; }
+
+/*re-work */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  color: white; }
+
+* {
+  box-sizing: border-box; }
+
+.parallax {
+  height: 130vh;
+  /* Since the parallax elements still consume space, we set the margin to undo
+     the height of this parallax element making it essentially consume 0 space.
+  */
+  margin-bottom: -130vh; }
+
+.parallax.header {
+  margin-bottom: -70vh; }
+
+.sunset:not(.header) {
+  align-items: flex-end; }
+
+.solid {
+  height: 70vh; }
+
+.kickdown {
+  padding-top: 30vh; }
+
+.kickdown2 {
+  padding-top: 100vh; }
+
+.vlilpad {
+  padding: .5em 0; }
+
+.ourface {
+  background-position: 55% 0; }
+
+.midit {
+  padding: 5vh 0; }
+  
+/*RSVP*/
+.modal-content{
+background-color:#424242}
+
